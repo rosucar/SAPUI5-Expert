@@ -1,0 +1,26 @@
+<mvc:View controllerName="logaligroup.invoices2.controller.View_ppal"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content> 
+           <Text id="txt_primerApp" text="Mi primer programa SAPUI5" ></Text>
+        </content>
+
+        <Page id="page_input1">
+           <Input id="in_name" value="{/recipient/name}"
+                  description="Hello {/recipient/name}" 
+                  width="68%"
+                  valueLiveUpdate="true">
+           </Input>       
+        </Page> 
+
+        <Page id="pageBoton">
+            <Button id="bt_sayHello" text="Say Hello" press=".onShowHello"></Button>
+        </Page>   
+   
+        
+        
+        <content />
+    </Page>
+</mvc:View>
+
